@@ -1,8 +1,8 @@
 stages:
   train:
-    cmd: python train.py data/raw/iris.csv models/model.pkl
+    cmd: python src/train.py data/raw/iris.csv models/model.pkl
     deps:
-      - train.py
+      - src/train.py
       - data/raw/iris.csv
     outs:
       - models/model.pkl
